@@ -2,10 +2,12 @@
   "name": "blog",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src\\index.js",
   "scripts": {
-    "start": "nodemon --inspect index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --inspect src\\index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass -w src\\resources\\scss\\app.scss src\\ThuMucShare\\css\\app.css",
+    "lamdep": "prettier --double-quote --tab-width 6 --trailing-comma all --write src\\**\\*.{js,json,scss,hbs}"
   },
   "repository": {
     "type": "git",
@@ -22,9 +24,15 @@
   },
   "homepage": "https://github.com/gttrongvn/nodejs_blog#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
+    "node-sass": "^9.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8"
   }
 }

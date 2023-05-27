@@ -1,0 +1,3 @@
+Trong teamplate engine handle bars: cấu trúc file của nó bắt đầu từ thư mục views
+sau đó sẽ là thư mục layouts
+thư mục partials
